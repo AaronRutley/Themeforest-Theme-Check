@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Themeforest Theme Check
-Plugin URI:
+Plugin URI: https://github.com/iKreativ/Themeforest-Theme-Check
 Description: A modified fork of the original Theme Check by Otto42 with additional Themeforest reviewer specific checks.
 Author: Scott Parry
 Author URI: https://ikreativ.com

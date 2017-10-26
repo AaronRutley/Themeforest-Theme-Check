@@ -1,6 +1,6 @@
 === Themeforest Specific Theme Check ===
 Author URI: http://ikreativ.com/
-Plugin URL: http://ottopress.com/wordpress-plugins/theme-check/
+Plugin URL: https://github.com/iKreativ/Themeforest-Theme-Check
 Requires at Least: 3.7
 Tested Up To: 4.4
 Tags: template, theme, check, checker, tool, wordpress, wordpress.org, upload, uploader, test, guideline, review
