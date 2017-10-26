@@ -19,7 +19,7 @@ class Themeforest implements themecheck {
 			'/@import/'                                 => __( 'Do not use @import. Instead, use wp_enqueue to load any external stylesheets', 'theme-check' ),
 			'/.bypostauthor{}/'                         => __( 'Do not use empty CSS classes to trick theme check', 'theme-check' ),
 			'/.sticky{}/'                               => __( 'Do not use empty CSS classes to trick theme check', 'theme-check' ),
-			'/style=/'                                  => __( 'CSS styling should not be hardcoded anywhere in your theme, either inline on a DOM element or in a style tag', 'theme-check' ),
+			//'/style=/'                                  => __( 'CSS styling should not be hardcoded anywhere in your theme, either inline on a DOM element or in a style tag', 'theme-check' ),
 			);
 
 		$grep = '';
