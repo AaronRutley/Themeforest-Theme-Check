@@ -14,12 +14,12 @@ class Themeforest implements themecheck {
 			'/[^a-z0-9](?<!_)mail\s?\(/'                => __( 'Mail functions are plugin territory', 'theme-check' ),
 			'/[^a-z0-9](?<!_)wp_mail\s?\(/'             => __( 'Mail functions are plugin territory', 'theme-check' ),
 			'/[^a-z0-9](?<!_)call_user_func\s?\(/'      => __( 'call_user_func() found. Possible obscured code', 'theme-check' ),
+			'/[^a-z0-9](?<!_)mkdir\s?\(/'               => __( 'mkdir() is not allowed. Use wp_mkdir_p() instead', 'theme-check' ),
 			'/[^a-z0-9](?<!_)(dirname|basename)\s?\(/'  => __( 'Directory path should be get_template_directory() and not dirname( FILE ) or basename( FILE )', 'theme-check' ),
 			'/[^a-z0-9](?<!_)user_contactmethods\s?\(/' => __( 'Extending user_contactmethods is plugin territory', 'theme-check' ),
 			'/@import/'                                 => __( 'Do not use @import. Instead, use wp_enqueue to load any external stylesheets', 'theme-check' ),
 			'/.bypostauthor{}/'                         => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
 			'/.sticky{}/'                               => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
-			//'/style=/'                                  => __( 'CSS styling should not be hardcoded anywhere in your theme, either inline on a DOM element or in a style tag', 'theme-check' ),
 			);
 
 		$grep = '';
