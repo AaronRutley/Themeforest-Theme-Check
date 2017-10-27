@@ -17,7 +17,7 @@ class Themeforest implements themecheck {
 			'/[^a-z0-9](?<!_)mkdir\s?\(/'               => __( 'mkdir() is not allowed. Use wp_mkdir_p() instead', 'theme-check' ),
 			'/[^a-z0-9](?<!_)(dirname|basename)\s?\(/'  => __( 'Directory path should be get_template_directory() and not dirname( FILE ) or basename( FILE )', 'theme-check' ),
 			'/[^a-z0-9](?<!_)user_contactmethods\s?\(/' => __( 'Extending user_contactmethods is plugin territory', 'theme-check' ),
-			'/@import/'                                 => __( 'Do not use @import. Instead, use wp_enqueue to load any external stylesheets', 'theme-check' ),
+			'/@import/'                                 => __( 'Do not use @import. Instead, use wp_enqueue to load any external stylesheets and fonts correctly', 'theme-check' ),
 			'/.bypostauthor{}/'                         => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
 			'/.sticky{}/'                               => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
 			);
