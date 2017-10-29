@@ -47,7 +47,7 @@ class ThemeCheckTFmain {
 
 		?>
 		<div id="theme-check" class="wrap">
-		<h1><?php _ex( 'Themeforest Specific Theme Check', 'title of the main page', 'theme-check' ); ?></h1>
+		<h1><?php _ex( 'Themeforest Theme Check', 'title of the main page', 'theme-check' ); ?></h1>
 		<div class="theme-check">
 		<?php
 			tc_form();
