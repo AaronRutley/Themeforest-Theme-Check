@@ -11,8 +11,8 @@ class Themeforest implements themecheck {
 
 		$checks = array(
 			'/@import/'                                 => __( 'Do not use @import. Instead, use wp_enqueue to load any external stylesheets and fonts correctly', 'theme-check' ),
-			'/.bypostauthor{}/'                         => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
-			'/.sticky{}/'                               => __( 'Do not use empty CSS classes to try trick theme check', 'theme-check' ),
+			'/.bypostauthor{}/'                         => __( 'Do not use empty CSS classes to try to trick theme check', 'theme-check' ),
+			'/.sticky{}/'                               => __( 'Do not use empty CSS classes to try to trick theme check', 'theme-check' ),
 			'/key=/'                                    => __( 'Possible personal API key found', 'theme-check' ),
 			'/[^a-z0-9](?<!_)mail\s?\(/'                => __( 'Mail functions are plugin territory', 'theme-check' ),
 			'/[^a-z0-9](?<!_)wp_mail\s?\(/'             => __( 'Mail functions are plugin territory', 'theme-check' ),
