@@ -14,13 +14,14 @@ class Themeforest implements themecheck {
 			'/.bypostauthor{}/'                                   => __( 'Do not use empty CSS classes to try to trick theme check', 'theme-check' ),
 			'/.sticky{}/'                                         => __( 'Do not use empty CSS classes to try to trick theme check', 'theme-check' ),
 			'/key=/'                                              => __( 'Possible personal API key found', 'theme-check' ),
+			'/@\$/'                                               => __( 'Possible error suppression is being used', 'theme-check' ),
 			'/[^a-z0-9](?<!_)mail\s?\(/'                          => __( 'Mail functions are plugin territory', 'theme-check' ),
 			'/[^a-z0-9](?<!_)wp_mail\s?\(/'                       => __( 'Mail functions are plugin territory', 'theme-check' ),
 			'/[^a-z0-9](?<!_)call_user_func\s?\(/'                => __( 'call_user_func() found. Possible obscured code', 'theme-check' ),
 			'/[^a-z0-9](?<!_)mkdir\s?\(/'                         => __( 'mkdir() is not allowed. Use wp_mkdir_p() instead', 'theme-check' ),
 			'/[^a-z0-9](?<!_)(dirname|basename)\s?\(/'            => __( 'Directory path should be get_template_directory() and not dirname( FILE ) or basename( FILE )', 'theme-check' ),
 			'/[^a-z0-9](?<!_)user_contactmethods\s?\(/'           => __( 'Extending user_contactmethods is plugin territory', 'theme-check' ),
-			'/[^a-z0-9](?<!_)balanceTags\s?\(/'                          => __( 'Possible data validation issues found. balanceTags() does not escape data', 'theme-check' ),
+			'/[^a-z0-9](?<!_)balanceTags\s?\(/'                   => __( 'Possible data validation issues found. balanceTags() does not escape data', 'theme-check' ),
 			'/echo \$/'                                           => __( 'Possible data validation issues found. All dynamic data must be correctly escaped for the context where it is rendered', 'theme-check' ),
 		);
 
